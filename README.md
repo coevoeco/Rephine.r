@@ -1,9 +1,3 @@
----
-title: "**Rephine.r**"
-author: ""
-output: html_document
----
-
 ## Overview
 
 The following is a step-by-step walkthrough for implementing the Rephine.r pipeline. 
