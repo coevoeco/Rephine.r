@@ -52,7 +52,7 @@ directory is in a partition with limited space, and you have access to a larger 
 You can do this with a command in the form:
  
 ```{bash,eval=FALSE}
-export TMPDIR=/path/to/your/preferred/temp/directory
+export TMPDIR=/path/to/your/preferred/temp/directory/
 ```
 
 
