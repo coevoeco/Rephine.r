@@ -4,7 +4,7 @@ The following is a step-by-step walkthrough for implementing the Rephine.r pipel
 
 
 This repository also includes the scripts "getSCG.r" and "fragclass.r", which can be used following Rephine.r to build an alignment of single-copy core genes and summarize which original gene calls were 
-part of a fragmentation event (described in [Follow-up analyses]).
+part of a fragmentation event (described in [Follow-up analyses](https://github.com/coevoeco/Rephine.r/blob/main/README.md#follow-up-analyses).
 
 
 ### Dependencies:
