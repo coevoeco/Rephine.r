@@ -1,10 +1,10 @@
 ## Overview
 
-The following is a step-by-step walkthrough for implementing the Rephine.r pipeline. 
+Rephine.r is a command-line R script designed to identify common errors in gene clustering that can arise when building phage pangenomes.
+These include errors due to distant homologs being separated into multiple gene clusters, or fragmented genes being misidentified as multi-copy genes.
 
 
-This repository also includes the scripts "getSCG.r" and "fragclass.r", which can be used following Rephine.r to build an alignment of single-copy core genes and summarize which original gene calls were 
-part of a fragmentation event (described in [Follow-up analyses](https://github.com/coevoeco/Rephine.r/blob/main/README.md#follow-up-analyses)).
+This repository also includes the scripts "getSCG.r" and "fragclass.r", which can be used following Rephine.r to build an alignment of single-copy core genes and summarize which original gene calls were part of a fragmentation event (described in [Follow-up analyses](https://github.com/coevoeco/Rephine.r/blob/main/README.md#follow-up-analyses)).
 
 
 ### Dependencies:
@@ -21,7 +21,7 @@ software required by Rephine.r, including MUSCLE, HMMER, and R.
 #### Installing Dependencies:
 
 
-1. Install the latest version of Anvi'o by following the developers' instructions [here](https://merenlab.org/2016/06/26/installation-v2/). **Note: Different versions of Anvi'o come with different versions of HMMER, and this can affect the reproducibility of Rephine.r's HMM merging step. Always make note of which version of Anvi'o and HMMER were used when running your analyses.**
+1. Install the latest version of Anvi'o by following the developers' instructions [here](https://merenlab.org/2016/06/26/installation-v2/). **Note: Different versions of Anvi'o come with different versions of HMMER, and this can affect the reproducibility of Rephine.r's HMM merging step. Always make note of which version of Anvi'o and HMMER were used when running your analyses. We have tested Rephine.r with Anvi'o v6.2 and v7.0**
 
 2. Install the required R packages by first activating your Anvi'o conda environment. Then run:
 
@@ -64,8 +64,7 @@ The contigs directory is used as "contigspath".
 
 
 ### Executing the Script:
-At minimum, Rephine.r requires only the paths to your pangenome output and contigs to run. By default, it will run both HMM merging and fragment identification steps in tandem, combine the results to create a new set of 
-gene clusters, and then run a second step of fragment identification. If desired, the user can choose to run only HMM merging or only fragment identification by changing the "flavor" option (-f) to 1 or 2, respectively.
+At minimum, Rephine.r requires only the paths to your pangenome output and contigs to run. By default, it will run both HMM merging and fragment identification steps in tandem, combine the results to create a new set of gene clusters, and then run a second step of fragment identification. If desired, the user can choose to run only HMM merging or only fragment identification by changing the "flavor" option (-f) to 1 or 2, respectively.
 
 
 A default run requires only:
@@ -105,7 +104,11 @@ The complete set of options are:
                 Show this help message and exit
 
 
+#### Outputs
+After running Rephine.r, the original "panpath" input directory will have a collection of new folders containing aligned and unaligned cluster files from each stage of the pipeline, as well as several summary files. The following files are of particular interest:
 
+* merged_clusters_list.txt: each line in this text file is a comma-separated list of which original gene clusters were merged
+* allgcfrags_table.txt: a tab-separated table with information about every gene call that is a potential fragment, as well as the values that are used within Rephine.r to decide if the ORFs should be identified as fragments and fused.
 
 ## **Follow-up Analyses**
 
