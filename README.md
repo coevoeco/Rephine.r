@@ -1,7 +1,8 @@
 ## Overview
 
 Rephine.r is a command-line R script designed to identify common errors in gene clustering that can arise when building phage pangenomes.
-These include errors due to distant homologs being separated into multiple gene clusters, or fragmented genes being misidentified as multi-copy genes.
+These include errors due to distant homologs being separated into multiple gene clusters, or fragmented genes being misidentified as multi-copy genes. 
+Correcting these errors will often make it possible to identify new single-copy core genes that can be used downstream to build phylogenies.
 
 
 This repository also includes the scripts "getSCG.r" and "fragclass.r", which can be used following Rephine.r to build an alignment of single-copy core genes and summarize which original gene calls were part of a fragmentation event (described in [Follow-up analyses](https://github.com/coevoeco/Rephine.r/blob/main/README.md#follow-up-analyses)).
