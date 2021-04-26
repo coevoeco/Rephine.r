@@ -22,7 +22,7 @@ software required by Rephine.r, including MUSCLE, HMMER, and R.
 #### Installing Dependencies:
 
 
-1. Install the latest version of Anvi'o by following the developers' instructions [here](https://merenlab.org/2016/06/26/installation-v2/). **Note: Different versions of Anvi'o come with different versions of HMMER, and this can affect the reproducibility of Rephine.r's HMM merging step. Always make note of which version of Anvi'o and HMMER were used when running your analyses. We have tested Rephine.r with Anvi'o v6.2 and v7.0**
+1. Install the latest version of Anvi'o by following the developers' instructions [here](https://merenlab.org/2016/06/26/installation-v2/). **Note: Different versions of Anvi'o come with different versions of HMMER, and this can affect the reproducibility of Rephine.r's HMM merging step. Always make note of which version of Anvi'o and HMMER were used when running your analyses. We have tested Rephine.r with Anvi'o v6.2 and v7.0.**
 
 2. Install the required R packages by first activating your Anvi'o conda environment. Then run:
 
@@ -108,7 +108,7 @@ The complete set of options are:
 #### Outputs
 After running Rephine.r, the original "panpath" input directory will have a collection of new folders containing aligned and unaligned cluster files from each stage of the pipeline, as well as several summary files. The following files are of particular interest:
 
-* merged_clusters_list.txt: each line in this text file is a comma-separated list of which original gene clusters were merged
+* merged_clusters_list.txt: each line in this text file is a comma-separated list of which original gene clusters were merged.
 * allgcfrags_table.txt: a tab-separated table with information about every gene call that is a potential fragment, as well as the values that are used within Rephine.r to decide if the ORFs should be identified as fragments and fused.
 
 ## **Follow-up Analyses**
