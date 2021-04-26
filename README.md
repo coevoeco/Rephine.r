@@ -10,11 +10,11 @@ part of a fragmentation event (described in [Follow-up analyses](https://github.
 ### Dependencies:
 
 
-* Anvi'o
+* [Anvi'o](https://merenlab.org/software/anvio/)
 * R packages: igraph, optparse
 
 
-Rephine.r currently relies on Anvi'o to build initial pangenomes. Future updates will enable using Rephine.r with other sources of gene clusters. An additional benefit of using Anvi'o, however, is it also installs most other
+Rephine.r currently relies on [Anvi'o](https://merenlab.org/software/anvio/) to build initial pangenomes. Future updates will enable using Rephine.r with other sources of gene clusters. An additional benefit of using Anvi'o, however, is it also installs most other
 software required by Rephine.r, including MUSCLE, HMMER, and R.
 
 
