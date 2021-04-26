@@ -31,7 +31,7 @@ install.packages('igraph')
 install.packages('optparse')
 ```
 
-***
+
 
 ## **Running Rephine.r**
 
@@ -105,7 +105,7 @@ The complete set of options are:
                 Show this help message and exit
 
 
-***
+
 
 ## **Follow-up Analyses**
 
