@@ -65,7 +65,7 @@ The contigs directory is used as "contigspath".
 
 
 ### Executing the Script:
-At minimum, Rephine.r requires only the paths to your pangenome output and contigs to run. By default, it will run both HMM merging and fragment identification steps in tandem, combine the results to create a new set of gene clusters, and then run a second step of fragment identification. If desired, the user can choose to run only HMM merging or only fragment identification by changing the "flavor" option (-f) to 1 or 2, respectively.
+At minimum, Rephine.r requires only the paths to your pangenome output and contigs to run. By default, it will run both HMM merging and fragment identification steps in tandem, combine the results to create a new set of gene clusters, and then run a second step of fragment identification. If desired, the user can choose to run only HMM merging or only fragment identification by changing the "flavor" option (-f) to 1 or 2, respectively. **Note: Some steps in Rephine.r take advantage of Anvi'o commands. You need to be in an active Anvi'o conda environment to use Rephine.r**
 
 
 A default run requires only:
