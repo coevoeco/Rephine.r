@@ -153,3 +153,8 @@ Each of these potential causes can be distinguished by where the gene fragments 
 
 1. fragtypemat.txt: A table summarizing the type of event that likely caused the fragmentation, including "indel", "SGE", or "undescribed" (for cases that do not resemble either option).
 2. anvio_frag_view_data.txt: A data table that is suitable for importing fragment information into Anvi'o genome visualization tools.
+
+
+## Want to read more?
+
+Our paper on Rephine.r is currently available as a [preprint](https://www.biorxiv.org/content/10.1101/2021.04.26.441508v1)!
